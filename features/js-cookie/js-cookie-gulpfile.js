@@ -8,7 +8,7 @@ module.exports = function($allonsy, $gulp) {
   $gulp.task('js-cookie', function(done) {
 
     $gulp
-      .src('node_modules/js-cookie/src/js.cookie.js')
+      .src('./node_modules/js-cookie/src/js.cookie.js')
       .pipe($gulp.dist('vendor'))
       .pipe(sourcemaps.init())
       .pipe(uglify().on('error', function(err) {
